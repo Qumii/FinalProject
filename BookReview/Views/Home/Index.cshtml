@@ -1,150 +1,79 @@
 ﻿@model IEnumerable<BookReview.Models.Book>
 
-@{
-    ViewData["Title"] = "Əsas Səhifə - Kitab Kataloqu";
+@if (ViewBag.ApiDebug != null)
+{
+    <div class="alert alert-danger my-3">
+        <strong>XƏTA BAŞ VERDİ:</strong> @ViewBag.ApiDebug
+    </div>
 }
 
-<!-- 1. Hero Section (Xoş gəlmisiniz Banneri) -->
-<div class="bg-dark text-white rounded-3 p-4 p-md-5 mb-4 shadow-sm position-relative overflow-hidden"
-     style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
-    <div class="row align-items-center">
-        <div class="col-lg-8">
-            <h1 class="display-5 fw-bold text-warning mb-2">Sevdiyiniz Kitabı Tapın və İcmal Yazın</h1>
-            <p class="fs-5 text-light opacity-75 mb-4">
-                Minlərlə kitab, oxucu rəyləri və sizin zövqünüzə uyğun dinamik tövsiyə sistemi bir arada.
-            </p>
-
-            <!-- Axtarış Qutusu (Dinamik Google/Baza Axtarışı) -->
-            <form asp-controller="Home" asp-action="Index" method="get" class="d-flex gap-2">
-                <input class="form-control form-control-lg border-0 shadow-sm"
-                       type="search"
-                       name="searchQuery"
-                       placeholder="Kitab adı, müəllif və ya məzmun axtar..." />
-                <button class="btn btn-warning btn-lg px-4 fw-semibold" type="submit">
-                    <i class="fa-solid fa-magnifying-glass me-1"></i> Axtar
-                </button>
-            </form>
-        </div>
-        <div class="col-lg-4 d-none d-lg-block text-center">
-            <i class="fa-solid fa-book-bookmark text-warning opacity-25" style="font-size: 9rem;"></i>
-        </div>
+@if (TempData["ShelfMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show my-3" role="alert">
+        <i class="fa-solid fa-check-circle me-1"></i> @TempData["ShelfMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-</div>
+}
 
-<!-- 2. Janr Filterləri (Dinamik Düymələr) -->
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="fw-bold m-0"><i class="fa-solid fa-layer-group text-warning me-2"></i>Kataloq</h4>
-    <div class="btn-group" role="group">
-        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-dark btn-sm active">Hamısı</a>
-        <a href="@Url.Action("Index", "Home", new { searchQuery = "Bədii" })" class="btn btn-outline-dark btn-sm">Bədii</a>
-        <a href="@Url.Action("Index", "Home", new { searchQuery = "Science" })" class="btn btn-outline-dark btn-sm">Elmi-Kütləvi</a>
-        <a href="@Url.Action("Index", "Home", new { searchQuery = "Detective" })" class="btn btn-outline-dark btn-sm">Detektiv</a>
-    </div>
-</div>
+@{
+    ViewData["Title"] = "Kitab Kataloqu";
+}
 
-<!-- 3. Kitab Kartları Şəbəkəsi (Grid) -->
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
-    @if (Model != null && Model.Any())
-    {
-        @foreach (var book in Model)
+<div class="container my-4">
+    <h2 class="fw-bold mb-4">📚 Kitab Kataloqu</h2>
+
+    <div class="row g-4">
+        @if (Model != null && Model.Any())
         {
-            <div class="col">
-                <div class="card h-100 border-0 shadow-sm hover-shadow transition-all position-relative rounded-3 overflow-hidden">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 overflow-hidden">
+                        <img src="@item.CoverImageUrl" class="card-img-top p-2" style="height:260px; object-fit: contain;" alt="@item.Title">
 
-                    <!-- Janr Badge -->
-                    <span class="position-absolute top-0 end-0 badge bg-warning text-dark m-2 shadow-sm fw-semibold">
-                        @(book.Genre?.Name ?? "Ümumi")
-                    </span>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-truncate" title="@item.Title">@item.Title</h5>
+                            <p class="text-muted small mb-2">
+                                <i class="fa-solid fa-user me-1"></i> Müəllif: @(item.Author?.Name ?? "Bilinmir")
+                            </p>
+                            <p class="card-text small text-secondary flex-grow-1" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                @item.Description
+                            </p>
 
-                    <!-- Kitab Şəkli -->
-                    <img src="@(string.IsNullOrEmpty(book.CoverImageUrl) ? "https://via.placeholder.com/300x400?text=No+Cover" : book.CoverImageUrl)"
-                         class="card-img-top"
-                         alt="@book.Title"
-                         style="height: 280px; object-fit: cover;" />
-
-                    <div class="card-body d-flex flex-column p-3">
-                        <!-- Müəllif -->
-                        <small class="text-muted mb-1"><i class="fa-solid fa-pen-nib me-1"></i>@(book.Author?.Name ?? "Naməlum Müəllif")</small>
-
-                        <!-- Başlıq -->
-                        <h5 class="card-title fw-bold text-truncate mb-2" title="@book.Title">
-                            @book.Title
-                        </h5>
-
-                        <!-- Qısa Təsvir -->
-                        <p class="card-text text-secondary small flex-grow-1 text-multiline-truncate mb-3">
-                            @book.Description
-                        </p>
-
-                        <!-- Reytinq -->
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="text-warning small me-2">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <small class="fw-bold text-dark">4.5</small>
-                            <small class="text-muted ms-1">(12 rəy)</small>
-                        </div>
-
-                        <!-- Düymələr Və Şəxsi Rəfə Əlavə Etmə Forması -->
-                        <div class="d-flex flex-column gap-2 mt-auto">
-                            <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-primary btn-sm rounded-2 w-100">
+                            <!-- 1. ƏTRAFLI OXU DÜYMƏSİ -->
+                            <a asp-controller="Home"
+                               asp-action="Details"
+                               asp-route-id="@item.Id"
+                               asp-route-title="@item.Title"
+                               asp-route-author="@item.Author?.Name"
+                               asp-route-coverUrl="@item.CoverImageUrl"
+                               asp-route-description="@item.Description"
+                               class="btn btn-outline-primary btn-sm rounded-2 w-100 mt-2">
                                 <i class="fa-solid fa-eye me-1"></i> Ətraflı Oxu
                             </a>
 
-                            <!-- Rəfə Əlavə Etmə Hissəsi -->
-                            <form asp-controller="UserShelf" asp-action="AddFromGoogle" method="post">
-                                <input type="hidden" name="title" value="@book.Title" />
-                                <input type="hidden" name="authorName" value="@book.Author?.Name" />
-                                <input type="hidden" name="coverUrl" value="@book.CoverImageUrl" />
-                                <input type="hidden" name="description" value="@book.Description" />
-
-                                <div class="input-group input-group-sm">
-                                    <select name="status" class="form-select form-select-sm border-warning">
-                                        <option value="WantToRead">Oxuyacaqlarım</option>
-                                        <option value="Reading">Oxuyuram</option>
-                                        <option value="Read">Oxumuşam</option>
+                            <!-- 3. RƏFƏ ƏLAVƏ ET DÜYMƏSİ VƏ DROPDOWN -->
+                            <form asp-controller="Home" asp-action="AddToShelf" method="post" class="mt-2">
+                                <input type="hidden" name="bookId" value="@item.Id" />
+                                <div class="input-group">
+                                    <select name="shelfType" class="form-select form-select-sm">
+                                        <option value="ReadLater">Oxuyacaqlarım</option>
+                                        <option value="Reading">Hal-hazırda Oxuduqlarım</option>
+                                        <option value="Completed">Oxuyub Bitirdiklərim</option>
                                     </select>
-                                    <button type="submit" class="btn btn-warning btn-sm fw-semibold" title="Şəxsi rəfimə əlavə et">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
+                                    <button type="submit" class="btn btn-warning btn-sm fw-bold">+</button>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-warning">
+                Sistemdə göstəriləcək kitab tapılmadı. (Model boşdur)
             </div>
         }
-    }
-    else
-    {
-        <div class="col-12 text-center py-5">
-            <i class="fa-solid fa-book-open text-muted mb-3" style="font-size: 3rem;"></i>
-            <h5 class="text-secondary">Hələ ki heç bir kitab tapılmadı.</h5>
-            <p class="text-muted small">Axtarış sözünü dəyişərək yenidən yoxlayın.</p>
-        </div>
-    }
+    </div>
 </div>
-
-<!-- Extra Hover Effekti üçün CSS -->
-<style>
-    .hover-shadow {
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
-
-        .hover-shadow:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
-        }
-
-    .text-multiline-truncate {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-</style>
