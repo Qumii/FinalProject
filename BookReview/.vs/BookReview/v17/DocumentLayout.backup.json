@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\usershelf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\usershelf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\services\\googlebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:services\\googlebooksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\controllers\\usershelfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:controllers\\usershelfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookreview\\views\\usershelf\\shelfbookgrid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3AEEDF-A52D-4286-8509-0631C8E3BBE7}|BookReview.csproj|solutionrelative:views\\usershelf\\shelfbookgrid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T22:20:50.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAJUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-31T22:16:44.069Z",
+              "WhenOpened": "2026-08-04T18:56:32.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T22:13:15.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GoogleBooksService.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Services\\GoogleBooksService.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleBooksService.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Services\\GoogleBooksService.cs",
+              "RelativeToolTip": "Services\\GoogleBooksService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:35:36.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserShelf.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\UserShelf.cs",
-              "RelativeDocumentMoniker": "Models\\UserShelf.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\UserShelf.cs",
-              "RelativeToolTip": "Models\\UserShelf.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:14:20.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "Models\\Review.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Review.cs",
-              "RelativeToolTip": "Models\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:13:49.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBUAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:13:15.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Genre.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Genre.cs",
-              "RelativeDocumentMoniker": "Models\\Genre.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Genre.cs",
-              "RelativeToolTip": "Models\\Genre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:12:48.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-30T12:08:51.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "Models\\Author.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\Author.cs",
-              "RelativeToolTip": "Models\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:12:27.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T12:11:34.525Z",
+              "WhenOpened": "2026-08-04T18:43:12.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ShelfBookGrid.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\UserShelf\\ShelfBookGrid.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserShelf\\ShelfBookGrid.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Views\\UserShelf\\ShelfBookGrid.cshtml",
+              "RelativeToolTip": "Views\\UserShelf\\ShelfBookGrid.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-04T18:33:54.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserShelfController.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\UserShelfController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserShelfController.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\UserShelfController.cs",
+              "RelativeToolTip": "Controllers\\UserShelfController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAqwHMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T18:29:52.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-30T12:07:41.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookReview\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T22:20:50.099Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<BookReview.Models.UserShelf>
+
+@{
+    ViewData["Title"] = "Şəxsi Rəf və Tövsiyələr";
+    var recommendedBooks = ViewBag.RecommendedBooks as List<BookReview.Models.Book>;
+}
+
+<div class="row mb-5">
+    <div class="col-12">
+        <h2 class="fw-bold mb-4">
+            <i class="fa-solid fa-bookmark text-warning me-2"></i>Şəxsi Kitab Rəfim
+        </h2>
+
+        <!-- Tab Naviqasiyası -->
+        <ul class="nav nav-pills mb-4 gap-2" id="shelfTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active fw-semibold" id="all-tab" data-bs-toggle="tab" data-bs-target="#all">
+                    Hamısı (@Model.Count())
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link fw-semibold" id="reading-tab" data-bs-toggle="tab" data-bs-target="#reading">
+                    <i class="fa-solid fa-book-open me-1 text-info"></i>Hal-hazırda Oxuyuram (@Model.Count(m => m.Status == ShelfStatus.Reading))
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link fw-semibold" id="want-tab" data-bs-toggle="tab" data-bs-target="#want">
+                    <i class="fa-solid fa-clock me-1 text-warning"></i>Oxuyacaqlarım (@Model.Count(m => m.Status == ShelfStatus.WantToRead))
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link fw-semibold" id="read-tab" data-bs-toggle="tab" data-bs-target="#read">
+                    <i class="fa-solid fa-check-circle me-1 text-success"></i>Oxumuşam (@Model.Count(m => m.Status == ShelfStatus.Read))
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Məzmunları -->
+        <div class="tab-content" id="shelfTabsContent">
+            <!-- 1. HAMISI -->
+            <div class="tab-pane fade show active" id="all">
+                @Html.Partial("_ShelfBookGrid", Model)
+            </div>
+            <!-- 2. HAL-HAZIRDA OXUYURAM -->
+            <div class="tab-pane fade" id="reading">
+                @Html.Partial("_ShelfBookGrid", Model.Where(m => m.Status == ShelfStatus.Reading))
+            </div>
+            <!-- 3. OXUYACAQLARIM -->
+            <div class="tab-pane fade" id="want">
+                @Html.Partial("_ShelfBookGrid", Model.Where(m => m.Status == ShelfStatus.WantToRead))
+            </div>
+            <!-- 4. OXUMUŞAM -->
+            <div class="tab-pane fade" id="read">
+                @Html.Partial("_ShelfBookGrid", Model.Where(m => m.Status == ShelfStatus.Read))
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5" />
+
+<!-- TÖVSİYƏ EDİLƏN KİTABLAR BLOKU -->
+<div class="bg-light p-4 rounded-3 shadow-sm border">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="fw-bold m-0"><i class="fa-solid fa-wand-magic-sparkles text-warning me-2"></i>Sizin İçin Tövsiyə Edilənlər</h3>
+            <p class="text-muted small m-0">Zövqünüzə və rəfinizdəki janrlara uyğun xüsusi seçilmiş kitablar.</p>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        @if (recommendedBooks != null && recommendedBooks.Any())
+        {
+            @foreach (var book in recommendedBooks)
+            {
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                        <img src="@(string.IsNullOrEmpty(book.CoverImageUrl) ? "https://via.placeholder.com/200x280" : book.CoverImageUrl)"
+                             class="card-img-top" style="height: 200px; object-fit: cover;" alt="@book.Title">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <span class="badge bg-warning text-dark align-self-start mb-1 small">@(book.Genre?.Name ?? "Ümumi")</span>
+                            <h6 class="fw-bold text-truncate mb-1">@book.Title</h6>
+                            <small class="text-muted mb-2">@book.Author?.Name</small>
+
+                            <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-warning btn-sm mt-auto w-100 fw-semibold">
+                                <i class="fa-solid fa-eye me-1"></i>Bax
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12 text-center py-3 text-muted">
+                Tövsiyə olunacaq yeni kitab tapılmadı.
+            </div>
+        }
+    </div>
+</div>

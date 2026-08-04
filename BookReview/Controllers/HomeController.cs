@@ -1,33 +1,24 @@
-using System.Diagnostics;
-using BookReview.Models;
-using Microsoft.AspNetCore.Mvc;
-using BookReview.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using BookReview.Services;
 
 namespace BookReview.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly GoogleBooksService _googleBooksService;
 
-        public HomeController(AppDbContext context)
+        public HomeController(GoogleBooksService googleBooksService)
         {
-            _context = context;
+            _googleBooksService = googleBooksService;
         }
 
-        public async Task<IActionResult> Index(int? genreId)
+        public async Task<IActionResult> Index(string searchQuery)
         {
-            var query = _context.Books
-                .Include(b => b.Author)
-                .Include(b => b.Genre)
-                .AsQueryable();
+            // İstifadəçi axtarış etməyibsə, ekrana populyar romanlar gəlsin
+            string query = string.IsNullOrWhiteSpace(searchQuery) ? "bestsellers" : searchQuery;
 
-            if (genreId.HasValue)
-            {
-                query = query.Where(b => b.GenreId == genreId.Value);
-            }
+            var books = await _googleBooksService.SearchBooksAsync(query);
 
-            var books = await query.ToListAsync();
             return View(books);
         }
     }

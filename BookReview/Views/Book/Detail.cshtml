@@ -1,0 +1,135 @@
+﻿@model BookReview.Models.Book
+
+@{
+    ViewData["Title"] = Model.Title + " - Kitab Detalları";
+    double avgRating = ViewBag.AverageRating ?? 0.0;
+    int reviewCount = Model.Reviews?.Count ?? 0;
+}
+
+<div class="row mb-5">
+    <!-- Sol tərəf: Kitabın Şəkli və Rəfə Əlavə Et Düyməsi -->
+    <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <img src="@(string.IsNullOrEmpty(Model.CoverImageUrl) ? "https://via.placeholder.com/400x550?text=No+Cover" : Model.CoverImageUrl)"
+                 class="img-fluid w-100" style="max-height: 480px; object-fit: cover;" alt="@Model.Title" />
+            <div class="card-body bg-light p-3">
+                <form asp-controller="UserShelf" asp-action="Add" method="post">
+                    <input type="hidden" name="bookId" value="@Model.Id" />
+                    <label class="form-label fw-semibold small text-muted"><i class="fa-solid fa-bookmark me-1"></i>Şəxsi Rəfə Əlavə Et:</label>
+                    <div class="input-group">
+                        <select name="status" class="form-select form-select-sm">
+                            <option value="WantToRead">Oxuyacaqlarım</option>
+                            <option value="Reading">Hal-hazırda oxuyuram</option>
+                            <option value="Read">Oxumuşam</option>
+                        </select>
+                        <button type="submit" class="btn btn-warning btn-sm fw-semibold">Əlavə et</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sağ tərəf: Kitab Haqqında Məlumatlar -->
+    <div class="col-md-8">
+        <div class="mb-2">
+            <span class="badge bg-primary fs-6 fw-normal mb-2">@(Model.Genre?.Name ?? "Ümumi")</span>
+            <h1 class="display-6 fw-bold">@Model.Title</h1>
+            <p class="text-muted fs-5">
+                <i class="fa-solid fa-pen-nib text-warning me-2"></i><strong>@Model.Author?.Name</strong>
+                <span class="ms-3 text-secondary small"><i class="fa-regular fa-calendar me-1"></i>Nəşr ili: @Model.PublishedYear</span>
+            </p>
+        </div>
+
+        <!-- Reytinq Bloku -->
+        <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm mb-4 border">
+            <div class="display-6 fw-bold text-dark me-3">@avgRating.ToString("0.0")</div>
+            <div>
+                <div class="text-warning fs-5">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= Math.Floor(avgRating))
+                        {
+                            <i class="fa-solid fa-star"></i>
+                        }
+                        else if (i - avgRating < 1 && i - avgRating > 0)
+                        {
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-regular fa-star"></i>
+                        }
+                    }
+                </div>
+                <small class="text-muted">Ümumi @reviewCount rəy əsasında</small>
+            </div>
+        </div>
+
+        <h5 class="fw-bold"><i class="fa-solid fa-align-left me-2 text-warning"></i>Məzmun / Təsvir</h5>
+        <p class="text-secondary lead fs-6 mb-4" style="line-height: 1.8;">@Model.Description</p>
+    </div>
+</div>
+
+<hr class="my-5" />
+
+<!-- RƏYLƏR SEKSİYASI -->
+<div class="row">
+    <div class="col-lg-7 mb-4">
+        <h3 class="fw-bold mb-4"><i class="fa-solid fa-comments text-warning me-2"></i>Oxucu Rəyləri (@reviewCount)</h3>
+
+        @if (Model.Reviews != null && Model.Reviews.Any())
+        {
+            @foreach (var review in Model.Reviews.OrderByDescending(r => r.CreatedAt))
+            {
+                <div class="card border-0 shadow-sm mb-3 rounded-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div class="fw-bold"><i class="fa-solid fa-circle-user text-secondary me-1"></i>@(review.User?.Username ?? "Anonim Oxucu")</div>
+                            <small class="text-muted">@review.CreatedAt.ToString("dd.MM.yyyy HH:mm")</small>
+                        </div>
+                        <div class="text-warning small mb-2">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                <i class="@(i <= review.Rating ? "fa-solid" : "fa-regular") fa-star"></i>
+                            }
+                        </div>
+                        <p class="card-text text-secondary m-0">@review.Comment</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-light border text-muted">Hələ bu kitaba heç kim rəy yazmayıb. İlk rəyi siz yazın!</div>
+        }
+    </div>
+
+    <!-- Rəy Yazma Forması -->
+    <div class="col-lg-5">
+        <div class="card border-0 shadow-sm rounded-3 bg-light p-3">
+            <h4 class="fw-bold mb-3"><i class="fa-solid fa-pen text-warning me-2"></i>Rəy Bildirin</h4>
+
+            <form asp-controller="Books" asp-action="AddReview" method="post">
+                <input type="hidden" name="BookId" value="@Model.Id" />
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Qiymətləndirməniz (Ulduz):</label>
+                    <select name="Rating" class="form-select" required>
+                        <option value="5">★★★★★ (5/5 - Əla)</option>
+                        <option value="4">★★★★☆ (4/5 - Yaxşı)</option>
+                        <option value="3">★★★☆☆ (3/5 - Orta)</option>
+                        <option value="2">★★☆☆☆ (2/5 - Zəif)</option>
+                        <option value="1">★☆☆☆☆ (1/5 - Çox bərbad)</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Şərhiniz:</label>
+                    <textarea name="Comment" class="form-control" rows="4" placeholder="Kitab haqqında fikirlərinizi bölüşün..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 fw-bold py-2">Rəyi Göndər</button>
+            </form>
+        </div>
+    </div>
+</div>

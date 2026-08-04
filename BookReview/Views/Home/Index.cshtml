@@ -14,8 +14,8 @@
                 Minlərlə kitab, oxucu rəyləri və sizin zövqünüzə uyğun dinamik tövsiyə sistemi bir arada.
             </p>
 
-            <!-- Axtarış Qutusu -->
-            <form asp-controller="Books" asp-action="Index" method="get" class="d-flex gap-2">
+            <!-- Axtarış Qutusu (Dinamik Google/Baza Axtarışı) -->
+            <form asp-controller="Home" asp-action="Index" method="get" class="d-flex gap-2">
                 <input class="form-control form-control-lg border-0 shadow-sm"
                        type="search"
                        name="searchQuery"
@@ -36,9 +36,9 @@
     <h4 class="fw-bold m-0"><i class="fa-solid fa-layer-group text-warning me-2"></i>Kataloq</h4>
     <div class="btn-group" role="group">
         <a href="@Url.Action("Index", "Home")" class="btn btn-outline-dark btn-sm active">Hamısı</a>
-        <a href="@Url.Action("Index", "Home", new { genreId = 1 })" class="btn btn-outline-dark btn-sm">Bədii</a>
-        <a href="@Url.Action("Index", "Home", new { genreId = 2 })" class="btn btn-outline-dark btn-sm">Elmi-Kütləvi</a>
-        <a href="@Url.Action("Index", "Home", new { genreId = 3 })" class="btn btn-outline-dark btn-sm">Detektiv</a>
+        <a href="@Url.Action("Index", "Home", new { searchQuery = "Bədii" })" class="btn btn-outline-dark btn-sm">Bədii</a>
+        <a href="@Url.Action("Index", "Home", new { searchQuery = "Science" })" class="btn btn-outline-dark btn-sm">Elmi-Kütləvi</a>
+        <a href="@Url.Action("Index", "Home", new { searchQuery = "Detective" })" class="btn btn-outline-dark btn-sm">Detektiv</a>
     </div>
 </div>
 
@@ -76,7 +76,7 @@
                             @book.Description
                         </p>
 
-                        <!-- Dinamik Ulduz Reytinqi (Nümunəvi 4.5/5) -->
+                        <!-- Reytinq -->
                         <div class="d-flex align-items-center mb-3">
                             <div class="text-warning small me-2">
                                 <i class="fa-solid fa-star"></i>
@@ -89,12 +89,32 @@
                             <small class="text-muted ms-1">(12 rəy)</small>
                         </div>
 
-                        <!-- Düymələr -->
-                        <div class="d-grid gap-2">
-                            <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-primary btn-sm rounded-2">
+                        <!-- Düymələr Və Şəxsi Rəfə Əlavə Etmə Forması -->
+                        <div class="d-flex flex-column gap-2 mt-auto">
+                            <a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-primary btn-sm rounded-2 w-100">
                                 <i class="fa-solid fa-eye me-1"></i> Ətraflı Oxu
                             </a>
+
+                            <!-- Rəfə Əlavə Etmə Hissəsi -->
+                            <form asp-controller="UserShelf" asp-action="AddFromGoogle" method="post">
+                                <input type="hidden" name="title" value="@book.Title" />
+                                <input type="hidden" name="authorName" value="@book.Author?.Name" />
+                                <input type="hidden" name="coverUrl" value="@book.CoverImageUrl" />
+                                <input type="hidden" name="description" value="@book.Description" />
+
+                                <div class="input-group input-group-sm">
+                                    <select name="status" class="form-select form-select-sm border-warning">
+                                        <option value="WantToRead">Oxuyacaqlarım</option>
+                                        <option value="Reading">Oxuyuram</option>
+                                        <option value="Read">Oxumuşam</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-warning btn-sm fw-semibold" title="Şəxsi rəfimə əlavə et">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -104,13 +124,13 @@
     {
         <div class="col-12 text-center py-5">
             <i class="fa-solid fa-book-open text-muted mb-3" style="font-size: 3rem;"></i>
-            <h5 class="text-secondary">Hələ ki heç bir kitab əlavə edilməyib.</h5>
-            <p class="text-muted small">Admin panelindən yeni kitablar əlavə edə bilərsiniz.</p>
+            <h5 class="text-secondary">Hələ ki heç bir kitab tapılmadı.</h5>
+            <p class="text-muted small">Axtarış sözünü dəyişərək yenidən yoxlayın.</p>
         </div>
     }
 </div>
 
-<!-- Extra Hover Effekti üçün Kiçik CSS -->
+<!-- Extra Hover Effekti üçün CSS -->
 <style>
     .hover-shadow {
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;

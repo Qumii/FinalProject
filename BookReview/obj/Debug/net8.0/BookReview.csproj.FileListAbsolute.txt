@@ -149,3 +149,4 @@ C:\Users\ulvee\Desktop\FinalProject\BookReview\obj\Debug\net8.0\refint\BookRevie
 C:\Users\ulvee\Desktop\FinalProject\BookReview\obj\Debug\net8.0\BookReview.pdb
 C:\Users\ulvee\Desktop\FinalProject\BookReview\obj\Debug\net8.0\BookReview.genruntimeconfig.cache
 C:\Users\ulvee\Desktop\FinalProject\BookReview\obj\Debug\net8.0\ref\BookReview.dll
+C:\Users\ulvee\Desktop\FinalProject\BookReview\obj\Debug\net8.0\BookReview.sourcelink.json

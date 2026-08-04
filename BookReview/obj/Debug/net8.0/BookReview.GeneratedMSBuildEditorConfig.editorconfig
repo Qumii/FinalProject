@@ -20,8 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/Book/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/UserShelf/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNoZWxmXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/UserShelf/ShelfBookGrid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclNoZWxmXFNoZWxmQm9va0dyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ulvee/Desktop/FinalProject/BookReview/Views/_ViewImports.cshtml]

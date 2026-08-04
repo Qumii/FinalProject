@@ -21,17 +21,21 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         .navbar-brand {
             font-weight: 700;
             letter-spacing: -0.5px;
         }
+
         .main-container {
             flex: 1;
         }
+
         .footer {
             background-color: #0f172a;
             color: #94a3b8;
         }
+
         .card-img-top {
             height: 260px;
             object-fit: cover;
@@ -69,17 +73,60 @@
                     </div>
                 </form>
 
-                <!-- İstifadəçi və Admin Menyusu -->
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-warning" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown">
-                            <i class="fa-solid fa-user-gear me-1"></i> Admin Panel
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" asp-controller="AdminBook" asp-action="Index"><i class="fa-solid fa-list me-2"></i>Kitabları İdarə Et</a></li>
-                            <li><a class="dropdown-item" asp-controller="AdminBook" asp-action="Create"><i class="fa-solid fa-plus me-2"></i>Yeni Kitab Əlavə Et</a></li>
-                        </ul>
-                    </li>
+                <!-- İstifadəçi, Admin və Auth Menyusu -->
+                <ul class="navbar-nav align-items-center">
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <!-- Yalnız Adminlər üçün görünən menyu -->
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-user-gear me-1"></i> Admin Panel
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li><a class="dropdown-item" asp-controller="AdminBook" asp-action="Index"><i class="fa-solid fa-list me-2"></i>Kitabları İdarə Et</a></li>
+                                <li><a class="dropdown-item" asp-controller="AdminBook" asp-action="Create"><i class="fa-solid fa-plus me-2"></i>Yeni Kitab Əlavə Et</a></li>
+                            </ul>
+                        </li>
+                    }
+
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
+                    {
+                        <!-- Daxil olunubsa: İstifadəçi Adı və Çıxış Et düyməsi -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light fw-semibold" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-circle-user text-warning me-1"></i> @User.Identity.Name
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="UserShelf" asp-action="Index">
+                                        <i class="fa-solid fa-bookmark me-2"></i>Şəxsi Rəfim
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item text-danger" asp-controller="Account" asp-action="Logout">
+                                        <i class="fa-solid fa-right-from-bracket me-2"></i>Çıxış Et
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <!-- Daxil olunmayıbsa: Login və Register düymələri -->
+                        <li class="nav-item me-1">
+                            <a class="btn btn-outline-light btn-sm px-3" asp-controller="Account" asp-action="Login">
+                                <i class="fa-solid fa-right-to-bracket me-1"></i> Daxil Ol
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-warning btn-sm px-3 fw-semibold" asp-controller="Account" asp-action="Register">
+                                <i class="fa-solid fa-user-plus me-1"></i> Qeydiyyat
+                            </a>
+                        </li>
+                    }
+
                 </ul>
             </div>
         </div>
