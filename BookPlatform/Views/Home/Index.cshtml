@@ -1,0 +1,45 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Ana səhifə";
+    var genreColors = new Dictionary<string, string> {
+        {"Roman","#A6473B"}, {"Elmi-fantastika","#4E7D8C"}, {"Detektiv","#3E4A63"},
+        {"Fəlsəfə","#6E5A8C"}, {"Tarix","#8C6A3E"}, {"Poeziya","#8FAE9A"},
+        {"Bioqrafiya","#B08968"}, {"Dram","#C6A15B"}
+    };
+}
+
+<section class="hero">
+    <div class="hero-grid">
+        <div>
+            <div class="eyebrow">Kitab rəyi &amp; tövsiyə platforması</div>
+            <h1>Hər kitabın öz cildi,<br>hər oxucunun öz rəfi.</h1>
+            <p class="lede">Kitabları janrına görə kəşf et, rəy yaz, qiymətləndir, onlayn oxu və rəflərinə əlavə et — reytinqlərinə əsasən sənə uyğun kitablar tövsiyə olunsun.</p>
+            <div class="hero-stats">
+                <div><span class="num">@ViewBag.TotalBooks</span><span class="lbl">Kitab</span></div>
+                <div><span class="num">@ViewBag.TotalReviews</span><span class="lbl">Rəy</span></div>
+                <div><span class="num">@ViewBag.AvgRating</span><span class="lbl">Orta bal</span></div>
+            </div>
+            <div class="detail-actions" style="margin-top:26px;">
+                <a class="btn btn-brass" asp-controller="Books" asp-action="Index">Kataloqa bax</a>
+                @if (!(User.Identity?.IsAuthenticated ?? false))
+                {
+                    <a class="btn btn-line" asp-controller="Account" asp-action="Register">Qeydiyyatdan keç</a>
+                }
+            </div>
+        </div>
+        <div class="shelf-wrap">
+            <div class="shelf">
+                @foreach (var b in Model)
+                {
+                    var color = genreColors.ContainsKey(b.Genre) ? genreColors[b.Genre] : "#C6A15B";
+                    var heightPct = 55 + (b.AverageRating / 5.0) * 45;
+                    <a class="spine" style="height:@(heightPct.ToString(System.Globalization.CultureInfo.InvariantCulture))%; background:@color;"
+                       asp-controller="Books" asp-action="Details" asp-route-id="@b.Id" title="@b.Title">
+                        <span class="stitle">@b.Title</span>
+                    </a>
+                }
+            </div>
+            <div class="shelf-caption">Cild eni → reytinq. Kitaba klik et.</div>
+        </div>
+    </div>
+</section>

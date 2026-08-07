@@ -1,0 +1,54 @@
+﻿@using BookPlatform.Models
+
+@model List<Book>
+@{
+    ViewData["Title"] = "Admin panel";
+}
+
+<section>
+    <div class="section-head">
+        <h1>Admin panel</h1>
+        <a class="btn btn-brass" asp-action="Create">+ Yeni kitab</a>
+    </div>
+
+    <div class="admin-stats">
+        <div class="stat"><span class="n">@Model.Count</span><span class="l">Kitab</span></div>
+        <div class="stat"><span class="n">@ViewBag.TotalReviews</span><span class="l">Rəy</span></div>
+        <div class="stat"><span class="n">@ViewBag.TotalUsers</span><span class="l">İstifadəçi</span></div>
+    </div>
+
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Ad</th>
+                <th>Müəllif</th>
+                <th>Janr</th>
+                <th>İl</th>
+                <th>Reytinq</th>
+                <th>Oxunma</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var b in Model)
+            {
+                <tr>
+                    <td><img class="admin-thumb" src="@b.CoverImageUrl" alt="@b.Title" /></td>
+                    <td>@b.Title</td>
+                    <td>@b.Author</td>
+                    <td>@b.Genre</td>
+                    <td>@b.Year</td>
+                    <td>@b.AverageRating.ToString("0.0") (@b.ReviewCount)</td>
+                    <td>@b.ReadCount</td>
+                    <td>
+                        <div class="admin-actions">
+                            <a asp-action="Edit" asp-route-id="@b.Id">Redaktə</a>
+                            <a class="del" asp-action="Delete" asp-route-id="@b.Id">Sil</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

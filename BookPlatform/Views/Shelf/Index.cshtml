@@ -1,0 +1,46 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Rəfim";
+}
+
+<section>
+    <div class="section-head">
+        <h1>Rəfim</h1>
+        <span class="cap">@Model.Count kitab</span>
+    </div>
+
+    <div class="grid">
+        @if (!Model.Any())
+        {
+            <div class="empty">Rəfin boşdur. Kataloqdan bəyəndiyin kitabları əlavə et.</div>
+        }
+        else
+        {
+            foreach (var b in Model)
+            {
+                int full = (int)Math.Round(b.AverageRating);
+                string stars = new string('★', full) + new string('☆', 5 - full);
+                <div class="shelf-card-wrap">
+                    <div class="card">
+                        <a class="cover" asp-controller="Books" asp-action="Details" asp-route-id="@b.Id">
+                            <span class="genre-tag">@b.Genre</span>
+                            <img src="@b.CoverImageUrl" alt="@b.Title cildi" loading="lazy" />
+                        </a>
+                        <div class="meta">
+                            <a asp-controller="Books" asp-action="Details" asp-route-id="@b.Id" class="title">@b.Title</a>
+                            <div class="author">@b.Author · @b.Year</div>
+                            <div class="row">
+                                <span class="stars">@stars</span>
+                                <span class="rcount">@b.ReviewCount rəy</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="mini-btn" asp-controller="Books" asp-action="Details" asp-route-id="@b.Id">Ətraflı</a>
+                            <button type="button" class="mini-btn shelf-btn shelf-on" data-book-id="@b.Id" data-on-shelf="true" data-remove-on-toggle="true">✓ Rəfimdə</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</section>

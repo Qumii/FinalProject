@@ -1,0 +1,13 @@
+﻿@model BookPlatform.Controllers.ErrorViewModel
+@{
+    ViewData["Title"] = "Xəta";
+}
+<section>
+    <div class="section-head"><h1>Xəta baş verdi</h1></div>
+    <p style="color:var(--parchment-dim);">Gözlənilməz bir xəta baş verdi. Yenidən cəhd et.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p class="mono" style="color:var(--sage); font-size:12px;">Request ID: @Model.RequestId</p>
+    }
+    <a class="btn btn-line" asp-controller="Home" asp-action="Index">Ana səhifəyə qayıt</a>
+</section>

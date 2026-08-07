@@ -1,0 +1,62 @@
+﻿@using BookPlatform.Models.ViewModels
+
+@model BookVM
+@{
+    ViewData["Title"] = "Yeni kitab";
+}
+<section>
+    <div class="section-head"><h1>Yeni kitab əlavə et</h1></div>
+
+    <div class="form-card" style="max-width:560px;">
+        <form asp-controller="Admin" asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="validation-summary-errors"></div>
+
+            <div class="form-group">
+                <label asp-for="Title">Kitabın adı</label>
+                <input asp-for="Title" />
+                <span asp-validation-for="Title"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author">Müəllif</label>
+                <input asp-for="Author" />
+                <span asp-validation-for="Author"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre">Janr</label>
+                <input asp-for="Genre" list="genreList" placeholder="məs. Roman" />
+                <datalist id="genreList">
+                    <option value="Roman"></option>
+                    <option value="Elmi-fantastika"></option>
+                    <option value="Detektiv"></option>
+                    <option value="Fəlsəfə"></option>
+                    <option value="Tarix"></option>
+                    <option value="Poeziya"></option>
+                    <option value="Bioqrafiya"></option>
+                    <option value="Dram"></option>
+                </datalist>
+                <span asp-validation-for="Genre"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year">Nəşr ili</label>
+                <input asp-for="Year" type="number" />
+                <span asp-validation-for="Year"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description">Qısa təsvir</label>
+                <textarea asp-for="Description" rows="3"></textarea>
+                <span asp-validation-for="Description"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContentPreview">Oxu mətni (nümunə, ixtiyari)</label>
+                <textarea asp-for="ContentPreview" rows="4" placeholder="Boş saxlasan, avtomatik nümunə mətn yaradılacaq."></textarea>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoverImage">Cild şəkli</label>
+                <input asp-for="CoverImage" type="file" accept="image/*" />
+            </div>
+
+            <button type="submit" class="btn btn-brass" style="width:100%;">Kitabı əlavə et</button>
+        </form>
+    </div>
+</section>
+}

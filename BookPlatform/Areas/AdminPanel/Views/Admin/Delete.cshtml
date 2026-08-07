@@ -1,0 +1,23 @@
+﻿@using BookPlatform.Models
+
+
+@model Book
+@{
+    ViewData["Title"] = "Kitabı sil";
+}
+<section>
+    <div class="section-head"><h1>Kitabı sil</h1></div>
+
+    <div class="form-card" style="max-width:520px;">
+        <p style="color:var(--parchment-dim); font-size:15px; margin-top:0;">
+            "<strong>@Model.Title</strong>" (@Model.Author) kitabını silmək istədiyinə əminsən?
+            Bu əməliyyat @Model.Reviews.Count rəyi də siləcək və geri qaytarıla bilməz.
+        </p>
+        <form asp-controller="Admin" asp-action="Delete" asp-route-id="@Model.Id" method="post">
+            <div style="display:flex; gap:12px;">
+                <button type="submit" class="btn btn-danger">Bəli, sil</button>
+                <a class="btn btn-line" asp-action="Index">Ləğv et</a>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,53 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Kataloq";
+    var genres = ViewBag.Genres as List<string> ?? new List<string>();
+    string currentGenre = ViewBag.CurrentGenre;
+    string currentQuery = ViewBag.CurrentQuery;
+    string currentSort = ViewBag.CurrentSort;
+}
+
+<section>
+    <div class="section-head">
+        <h1>Kataloq</h1>
+        <span class="cap">@Model.Count kitab</span>
+    </div>
+
+    <form method="get" asp-action="Index" class="controls">
+        <div class="search-box">
+            <input type="text" name="q" value="@currentQuery" placeholder="Kitab və ya müəllif axtar…" />
+        </div>
+        <input type="hidden" name="genre" value="@currentGenre" />
+        <select name="sort" class="sortsel" onchange="this.form.submit()">
+            <option value="rating" selected="@(currentSort == "rating")">Reytinqə görə</option>
+            <option value="title" selected="@(currentSort == "title")">Ad (A-Z)</option>
+            <option value="year" selected="@(currentSort == "year")">İl (yeni)</option>
+            <option value="reviews" selected="@(currentSort == "reviews")">Rəy sayına görə</option>
+        </select>
+        <button type="submit" class="btn btn-line">Axtar</button>
+    </form>
+
+    <div class="chip-row">
+        <a class="chip @(currentGenre == "Hamısı" ? "active" : "")" asp-action="Index" asp-route-q="@currentQuery" asp-route-genre="Hamısı" asp-route-sort="@currentSort">Hamısı</a>
+        @foreach (var g in genres)
+        {
+            <a class="chip @(currentGenre == g ? "active" : "")" asp-action="Index" asp-route-q="@currentQuery" asp-route-genre="@g" asp-route-sort="@currentSort">@g</a>
+        }
+    </div>
+
+    <div style="height:22px"></div>
+
+    <div class="grid">
+        @if (!Model.Any())
+        {
+            <div class="empty">Bu axtarışa uyğun kitab tapılmadı.</div>
+        }
+        else
+        {
+            foreach (var b in Model)
+            {
+                <partial name="_BookCard" model="b" />
+            }
+        }
+    </div>
+</section>

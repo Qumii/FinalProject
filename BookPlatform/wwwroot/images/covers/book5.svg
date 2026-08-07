@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6E5A8C"/>
+      <stop offset="100%" stop-color="#2e1a4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="280" fill="url(#g)"/>
+  <rect x="0" y="0" width="200" height="280" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+  <line x1="14" y1="14" x2="14" y2="266" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="100" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="17" fill="rgba(22,33,28,0.92)"><tspan x="100" dy="0">Kiçik Şahzadə</tspan></text>
+  <text x="100" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="rgba(22,33,28,0.75)">A. de Saint-Exupéry</text>
+  <text x="100" y="264" text-anchor="middle" font-family="Georgia, serif" font-size="8" letter-spacing="1" fill="rgba(22,33,28,0.55)">FƏLSƏFƏ</text>
+</svg>

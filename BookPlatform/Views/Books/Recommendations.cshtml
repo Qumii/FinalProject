@@ -1,0 +1,26 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Tövsiyələr";
+}
+
+<section>
+    <div class="section-head">
+        <h1>Sənə tövsiyələr</h1>
+        <span class="cap">Rəylərinə əsasən</span>
+    </div>
+    <div class="shelf-caption" style="text-align:left; margin-bottom:22px; font-size:13px;">@ViewBag.Note</div>
+
+    <div class="grid">
+        @if (!Model.Any())
+        {
+            <div class="empty">Hələ tövsiyə üçün kifayət qədər kitab yoxdur.</div>
+        }
+        else
+        {
+            foreach (var b in Model)
+            {
+                <partial name="_BookCard" model="b" />
+            }
+        }
+    </div>
+</section>

@@ -1,0 +1,87 @@
+﻿@model Book
+@{
+    ViewData["Title"] = Model.Title;
+    bool onShelf = ViewBag.OnShelf;
+    int full = (int)Math.Round(Model.AverageRating);
+    string stars = new string('★', full) + new string('☆', 5 - full);
+    bool isAuthed = User.Identity != null && User.Identity.IsAuthenticated;
+}
+
+<section>
+    <div class="detail-top">
+        <div class="detail-cover">
+            <img src="@Model.CoverImageUrl" alt="@Model.Title cildi" />
+        </div>
+        <div class="detail-info">
+            <span class="genre-tag">@Model.Genre</span>
+            <h1>@Model.Title</h1>
+            <div class="author">@Model.Author · @Model.Year</div>
+            <div class="avg">
+                <span class="stars" id="avgStars">@stars</span>
+                <span class="num" id="avgNum">@Model.AverageRating.ToString("0.0")</span>
+                <span class="rcount" id="rcountNum">@Model.ReviewCount rəy</span>
+                <span class="rcount">· @Model.ReadCount oxunma</span>
+            </div>
+            <p class="desc">@Model.Description</p>
+            <div class="detail-actions">
+                <a class="btn btn-brass" asp-action="Read" asp-route-id="@Model.Id">Onlayn oxu</a>
+                @if (isAuthed)
+                {
+                    <button type="button" class="btn btn-line shelf-btn" data-book-id="@Model.Id" data-on-shelf="@(onShelf ? "true" : "false")">
+                        @(onShelf ? "✓ Rəfimdə" : "+ Rəfə əlavə et")
+                    </button>
+                }
+                else
+                {
+                    <a class="btn btn-line" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Url.Action("Details", "Books", new { id = Model.Id })">Rəfə əlavə etmək üçün daxil ol</a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <h4 class="subhead">Rəylər</h4>
+    <div id="reviewList">
+        @if (!Model.Reviews.Any())
+        {
+            <div class="empty" style="text-align:left; padding:20px 0;">Hələ rəy yoxdur. İlk rəyi sən yaz!</div>
+        }
+        else
+        {
+            foreach (var r in Model.Reviews.OrderByDescending(r => r.CreatedAt))
+            {
+                int rf = r.Rating;
+                string rs = new string('★', rf) + new string('☆', 5 - rf);
+                <div class="review">
+                    <div class="rhead">
+                        <span class="rname">@r.UserName</span>
+                        <span class="rstars">@rs</span>
+                    </div>
+                    <p>@r.Text</p>
+                </div>
+            }
+        }
+    </div>
+
+    @if (isAuthed)
+    {
+        <form id="reviewForm" method="post" asp-controller="Books" asp-action="AddReview" class="review-form" data-book-id="@Model.Id">
+            @Html.AntiForgeryToken()
+            <h4 class="subhead">Rəy yaz</h4>
+            <div class="frow">
+                <div class="star-input">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <button type="button" data-value="@i">★</button>
+                    }
+                </div>
+                <input type="hidden" name="Rating" value="0" />
+            </div>
+            <textarea name="Text" placeholder="Bu kitab haqqında fikrin…"></textarea>
+            <button type="submit" class="btn btn-brass" style="margin-top:12px;">Rəyi göndər</button>
+        </form>
+    }
+    else
+    {
+        <div class="admin-note" style="margin-top:20px;">Rəy yazmaq üçün <a asp-controller="Account" asp-action="Login" style="color:var(--brass-bright)">daxil ol</a>.</div>
+    }
+</section>

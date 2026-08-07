@@ -1,0 +1,19 @@
+﻿@model Book
+@{
+    ViewData["Title"] = "Oxu — " + Model.Title;
+}
+
+<section class="read-page">
+    <a asp-action="Details" asp-route-id="@Model.Id" class="btn-line btn" style="display:inline-block; margin-bottom:24px;">← Kitaba qayıt</a>
+    <h1>@Model.Title</h1>
+    <div class="read-meta">
+        <span>@Model.Author</span>
+        <span>·</span>
+        <span>@Model.Genre</span>
+        <span>·</span>
+        <span>@Model.ReadCount dəfə oxunub</span>
+    </div>
+    <div class="read-text">
+        @Model.ContentPreview
+    </div>
+</section>

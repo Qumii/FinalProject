@@ -1,0 +1,30 @@
+﻿@model Book
+@{
+    var shelfIds = ViewBag.ShelfIds as List<int> ?? new List<int>();
+    bool onShelf = shelfIds.Contains(Model.Id);
+    int full = (int)Math.Round(Model.AverageRating);
+    string stars = new string('★', full) + new string('☆', 5 - full);
+}
+<div class="card">
+    <a class="cover" asp-controller="Books" asp-action="Details" asp-route-id="@Model.Id">
+        <span class="genre-tag">@Model.Genre</span>
+        <img src="@Model.CoverImageUrl" alt="@Model.Title cildi" loading="lazy" />
+    </a>
+    <div class="meta">
+        <a asp-controller="Books" asp-action="Details" asp-route-id="@Model.Id" class="title">@Model.Title</a>
+        <div class="author">@Model.Author · @Model.Year</div>
+        <div class="row">
+            <span class="stars">@stars</span>
+            <span class="rcount">@Model.ReviewCount rəy</span>
+        </div>
+    </div>
+    <div class="actions">
+        <a class="mini-btn" asp-controller="Books" asp-action="Details" asp-route-id="@Model.Id">Ətraflı</a>
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <button type="button" class="mini-btn shelf-btn @(onShelf ? "shelf-on" : "")" data-book-id="@Model.Id" data-on-shelf="@(onShelf ? "true" : "false")">
+                @(onShelf ? "✓ Rəfimdə" : "+ Rəfə əlavə et")
+            </button>
+        }
+    </div>
+</div>
