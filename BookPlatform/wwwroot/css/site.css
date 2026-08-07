@@ -95,13 +95,13 @@ header.top {
     font-size: 22px;
 }
 
-    .brand .mark {
+/*    .brand .mark {
         width: 26px;
         height: 26px;
         border-radius: 2px;
         background: linear-gradient(180deg, var(--brass-bright), var(--burgundy-bright));
         display: inline-block;
-    }
+    }*/
 
 nav.top-links {
     display: flex;

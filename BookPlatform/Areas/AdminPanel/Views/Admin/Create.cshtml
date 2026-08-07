@@ -4,8 +4,13 @@
 @{
     ViewData["Title"] = "Yeni kitab";
 }
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <section>
-    <div class="section-head"><h1>Yeni kitab əlavə et</h1></div>
+    <div class="section-head"><h1>Yeni kitab əlavə et</h1>  <div class="btn btn-info" style="display:flex; justify-content:end;"><a asp-controller="Admin" asp-action="Index">Geri</a></div></div>
 
     <div class="form-card" style="max-width:560px;">
         <form asp-controller="Admin" asp-action="Create" method="post" enctype="multipart/form-data">
@@ -59,4 +64,4 @@
         </form>
     </div>
 </section>
-}
+

@@ -10,6 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] — Rəf</title>
+    <link rel="icon" type="image/webp" href="https://images.vexels.com/media/users/3/229082/isolated/preview/6fabc24c3830d75486725cc6d786dfbb-book-circles-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -17,7 +18,7 @@
 <body>
     <header class="top">
         <div class="top-inner">
-            <a class="brand" asp-controller="Home" asp-action="Index"><span class="mark"></span>Rəf</a>
+            <a class="brand" asp-controller="Home" asp-action="Index"><img src="https://images.vexels.com/media/users/3/229082/isolated/preview/6fabc24c3830d75486725cc6d786dfbb-book-circles-logo.png" alt="Alternate Text" style="width:50px; height:50px;" />Rəf</a>
             <nav class="top-links">
                 <a asp-controller="Books" asp-action="Index">Kataloq</a>
                 @if (SignInManager.IsSignedIn(User))
@@ -27,7 +28,7 @@
                 }
                 @if (User.IsInRole("Admin"))
                 {
-                    <a asp-controller="Admin" asp-action="Index">Admin panel</a>
+                    <a asp-area="AdminPanel" asp-controller="Admin" asp-action="Index">Admin panel</a>
                 }
             </nav>
             <div class="auth-area">
@@ -59,7 +60,7 @@
     <footer>
         <div class="wrap">
             <span>Rəf — Kitab rəyi və tövsiyə platforması</span>
-            <span>Tələbə layihəsi, 2026 · ASP.NET Core MVC</span>
+            <span>2026 - Müəllif hüquqları qorunur.</span>
         </div>
     </footer>
 

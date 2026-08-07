@@ -5,17 +5,24 @@
     ViewData["Title"] = "Admin panel";
 }
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <section>
     <div class="section-head">
         <h1>Admin panel</h1>
-        <a class="btn btn-brass" asp-action="Create">+ Yeni kitab</a>
+        <a class="btn btn-brass" asp-area="AdminPanel" asp-controller="Admin" asp-action="Create">+ Yeni kitab</a>
     </div>
 
     <div class="admin-stats">
         <div class="stat"><span class="n">@Model.Count</span><span class="l">Kitab</span></div>
         <div class="stat"><span class="n">@ViewBag.TotalReviews</span><span class="l">Rəy</span></div>
         <div class="stat"><span class="n">@ViewBag.TotalUsers</span><span class="l">İstifadəçi</span></div>
+        <div class="btn btn-info" style="display:flex; justify-content:space-evenly; margin-left: 700px; margin-right:0px;"><a asp-area="default" asp-controller="Home" asp-action="Index">Geri</a></div>
     </div>
+
+
 
     <table class="admin-table">
         <thead>
@@ -43,8 +50,8 @@
                     <td>@b.ReadCount</td>
                     <td>
                         <div class="admin-actions">
-                            <a asp-action="Edit" asp-route-id="@b.Id">Redaktə</a>
-                            <a class="del" asp-action="Delete" asp-route-id="@b.Id">Sil</a>
+                            <a asp-area="AdminPanel" asp-controller="Admin" asp-action="Edit" asp-route-id="@b.Id">Redaktə</a>
+                            <a class="del" asp-area="AdminPanel" asp-controller="Admin" asp-action="Delete" asp-route-id="@b.Id">Sil</a>
                         </div>
                     </td>
                 </tr>

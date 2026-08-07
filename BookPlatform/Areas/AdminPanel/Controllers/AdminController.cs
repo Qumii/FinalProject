@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookPlatform.Areas.AdminPanel.Controllers
 {
-    //[Area("AdminPanel")]
+    [Area("AdminPanel")]
     [Authorize(Roles = "Admin")]
         public class AdminController : Controller
         {
@@ -38,8 +38,9 @@ namespace BookPlatform.Areas.AdminPanel.Controllers
           
             public IActionResult Create()
             {
-                return View(new BookVM { Year = DateTime.UtcNow.Year });
+                return View(new BookVM { Year = DateTime.Now.Year });
             }
+
 
             [HttpPost]
             [ValidateAntiForgeryToken]
@@ -57,7 +58,7 @@ namespace BookPlatform.Areas.AdminPanel.Controllers
                     ContentPreview = string.IsNullOrWhiteSpace(model.ContentPreview)
                         ? $"Bu, \"{model.Title}\" kitabının nümunə oxu mətnidir (demo məqsədilə yazılmışdır)."
                         : model.ContentPreview,
-                    CreatedAt = DateTime.UtcNow
+                    CreatedAt = DateTime.Now
                 };
 
                 book.CoverImageUrl = await SaveCoverAsync(model.CoverImage) ?? "/images/covers/default.svg";

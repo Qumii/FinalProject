@@ -7,6 +7,42 @@
       "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\views\\books\\recommendations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:views\\books\\recommendations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\views\\shelf\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:views\\shelf\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,22 +91,6 @@
       "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\areas\\adminpanel\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:areas\\adminpanel\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|c:\\users\\ulvee\\desktop\\finalproject\\bookplatform\\viewmodels\\account\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2CB4653-91DC-4001-8937-C37E1851F9F6}|BookPlatform.csproj|solutionrelative:viewmodels\\account\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,84 +118,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "Controllers\\BooksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:13:46.776Z",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHIDAAAAAAAAAAAhwHUDAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-08-07T19:18:11.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswGMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:28:57.447Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAC8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T16:26:55.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShelfItem.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\ShelfItem.cs",
-              "RelativeDocumentMoniker": "Models\\ShelfItem.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\ShelfItem.cs*",
-              "RelativeToolTip": "Models\\ShelfItem.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:47:06.149Z",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T16:45:01.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T16:20:59.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Areas\\AdminPanel\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Areas\\AdminPanel\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowCYAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwKEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-07T11:43:02.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Data\\AppDbContext.cs*",
-              "RelativeToolTip": "Data\\AppDbContext.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:55:53.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Recommendations.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Recommendations.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Recommendations.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Recommendations.cshtml",
-              "RelativeToolTip": "Views\\Books\\Recommendations.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:24:21.656Z",
               "EditorCaption": ""
             },
             {
@@ -194,27 +193,126 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-07T12:22:32.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Shelf\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shelf\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Shelf\\Index.cshtml",
-              "RelativeToolTip": "Views\\Shelf\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T12:08:54.462Z",
+              "WhenOpened": "2026-08-07T12:36:53.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T11:56:10.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAC6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T11:55:06.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T10:44:13.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Recommendations.cshtml",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Recommendations.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Recommendations.cshtml",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Recommendations.cshtml",
+              "RelativeToolTip": "Views\\Books\\Recommendations.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-07T11:24:21.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T10:55:53.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShelfItem.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\ShelfItem.cs",
+              "RelativeDocumentMoniker": "Models\\ShelfItem.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\ShelfItem.cs",
+              "RelativeToolTip": "Models\\ShelfItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T10:47:06.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswGMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T11:28:57.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T11:13:46.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Home\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Error.cshtml",
@@ -222,12 +320,11 @@
               "RelativeToolTip": "Views\\Home\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:25:47.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:25:47.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -235,12 +332,11 @@
               "RelativeToolTip": "Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:46:00.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T10:46:00.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
@@ -248,12 +344,11 @@
               "RelativeToolTip": "Models\\Review.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:46:55.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T10:46:55.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -261,12 +356,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwB4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:44:39.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T10:44:39.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "ShelfController.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Controllers\\ShelfController.cs",
               "RelativeDocumentMoniker": "Controllers\\ShelfController.cs",
@@ -274,12 +368,11 @@
               "RelativeToolTip": "Controllers\\ShelfController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwDMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T13:36:07.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T13:36:07.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -287,64 +380,11 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:35:15.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:35:15.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Edit.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:55:06.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
-              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:56:10.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T10:44:13.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Areas\\AdminPanel\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T12:36:53.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -352,12 +392,11 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAACYAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:34:34.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:34:34.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\ViewModels\\Account\\LoginVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\Account\\LoginVM.cs",
@@ -365,12 +404,11 @@
               "RelativeToolTip": "ViewModels\\Account\\LoginVM.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:30:31.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:30:31.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\ViewModels\\Account\\RegisterVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\Account\\RegisterVM.cs",
@@ -378,12 +416,11 @@
               "RelativeToolTip": "ViewModels\\Account\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T11:30:24.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:30:24.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Read.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Read.cshtml",
               "RelativeDocumentMoniker": "Views\\Books\\Read.cshtml",
@@ -391,12 +428,11 @@
               "RelativeToolTip": "Views\\Books\\Read.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:23:27.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:23:27.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Books\\Details.cshtml",
@@ -404,12 +440,11 @@
               "RelativeToolTip": "Views\\Books\\Details.cshtml",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:22:33.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:22:33.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ulvee\\Desktop\\FinalProject\\BookPlatform\\Views\\Books\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
@@ -417,8 +452,7 @@
               "RelativeToolTip": "Views\\Books\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-07T11:21:48.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-07T11:21:48.383Z"
             }
           ]
         }

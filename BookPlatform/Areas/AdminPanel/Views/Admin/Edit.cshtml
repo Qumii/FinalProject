@@ -5,8 +5,13 @@
 @{
     ViewData["Title"] = "Kitabı redaktə et";
 }
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 <section>
-    <div class="section-head"><h1>Kitabı redaktə et</h1></div>
+    <div class="section-head"><h1>Kitabı redaktə et</h1>  <div class="btn btn-info" style="display:flex; justify-content:end;"><a asp-controller="Admin" asp-action="Index">Geri</a></div></div>
 
     <div class="form-card" style="max-width:560px;">
         @if (!string.IsNullOrEmpty(Model.ExistingCoverImageUrl))
